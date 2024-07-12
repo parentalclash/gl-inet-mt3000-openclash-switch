@@ -18,5 +18,5 @@ wget -O gl-inet-mt3000-openclash-switch-install.sh https://github.com/parentalcl
 sh gl-inet-mt3000-openclash-switch-install.sh
 ```
 
-# 特别感情
+# 特别感谢
 https://github.com/wukongdaily/gl-inet-onescript
