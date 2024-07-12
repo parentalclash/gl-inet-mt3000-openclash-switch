@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# 定义发布版本
+version_number='1.0'
+
 # 定义颜色输出函数
 red() { echo -e "\033[31m\033[01m$1\033[0m"; }
 green() { echo -e "\033[32m\033[01m$1\033[0m"; }
@@ -89,7 +92,7 @@ install_switch() {
 	
 	mkdir -p /tmp/mt3000_openclash_switch
 	cd /tmp/mt3000_openclash_switch
-	wget -O openclash-mt3000-switch.tar.gz "https://github.com/parentalclash/gl-inet-mt3000-openclash-switch/releases/download/1.0/openclash-mt3000-switch.tar.gz"
+	wget -O openclash-mt3000-switch.tar.gz "https://github.com/parentalclash/gl-inet-mt3000-openclash-switch/releases/download/$version_number/openclash-mt3000-switch.tar.gz"
 	tar zxf openclash-mt3000-switch.tar.gz
 	cp openclash.sh /etc/gl-switch.d
 	chmod +x /etc/gl-switch.d/openclash.sh
